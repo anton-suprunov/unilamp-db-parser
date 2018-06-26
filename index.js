@@ -71,7 +71,18 @@ const isType = (type, part) => {
 //60mm
 // 10 cm
 // 10 cm.
-const isSize = part => /^[\dx]{1,}[ ]{0,1}[cm.]{2,3}$/.test(part);
+//1200/300
+const isSize = part => {
+  if (/^[\dx]{1,}[ ]{0,1}[cm.]{2,3}$/.test(part)) {
+    return true;
+  }
+
+  if (/^[\d]{2,}\/[\d]{2,}$/.test(part)) {
+    return true;
+  }
+
+  return false;
+}
 
 //4x4w
 //100w
