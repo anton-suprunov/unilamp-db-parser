@@ -1,0 +1,17 @@
+{
+  "name": "db-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "airtable": "^0.5.6",
+    "csv-parse": "^2.0.4",
+    "dotenv": "^6.0.0",
+    "jsonfile": "^4.0.0"
+  }
+}
